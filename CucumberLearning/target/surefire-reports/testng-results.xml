@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-24T15:01:46 EDT" name="Test runner" finished-at="2022-03-24T15:02:10 EDT" duration-ms="23744">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:zoho.testrunner.MyRunner@17a7f733]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-03-24T15:01:46 EDT" name="Cucumber Runner" finished-at="2022-03-24T15:02:10 EDT" duration-ms="23744">
+      <class name="zoho.testrunner.MyRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:zoho.testrunner.MyRunner@17a7f733]" started-at="2022-03-24T15:01:46 EDT" name="setUpClass" finished-at="2022-03-24T15:01:47 EDT" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:zoho.testrunner.MyRunner@17a7f733]" started-at="2022-03-24T15:01:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-24T15:02:10 EDT" duration-ms="23130" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Deletion of the lead"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Managing Leads]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Lead  found in lead list]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Lead  found in lead list
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at zoho.managers.WebDriverManager.logFailure(WebDriverManager.java:66)
+at pages.LeadDetailPage.validateLeadNotPresent(LeadDetailPage.java:30)
+at zoho.teststeps.Leads.verifyLeadCreation(Leads.java:103)
+at ✽.Lead 'John Alex' should 'not be present' inside the grid(file:///D:/LearningJavaSelenium/CucumberLearning/src/test/resources/zoho/leads.feature:50)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:zoho.testrunner.MyRunner@17a7f733]" started-at="2022-03-24T15:02:10 EDT" name="tearDownClass" finished-at="2022-03-24T15:02:10 EDT" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- zoho.testrunner.MyRunner -->
+    </test> <!-- Cucumber Runner -->
+  </suite> <!-- Test runner -->
+</testng-results>

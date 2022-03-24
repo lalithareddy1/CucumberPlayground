@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.451 s <<< FAILURE! - in TestSuite
+zoho.testrunner.MyRunner.runScenario  Time elapsed: 23.143 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Lead  found in lead list
+
